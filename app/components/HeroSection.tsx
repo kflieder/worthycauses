@@ -4,7 +4,7 @@ import { scrollToSection } from "../lib/scrollTo";
 function HeroSection() {
     
   return (
-    <div id='hero' className='grid grid-cols-1 place-items-end lg:place-items-center lg:grid-cols-5 h-[75vh] section-anchor text-white lg:text-black'>
+    <div id='hero' className='grid grid-cols-1 place-items-end lg:place-items-center lg:grid-cols-5 h-85vh section-anchor text-white lg:text-black'>
       <div className='inset-0 opacity-45 absolute block lg:hidden z-1 max-h-[95vh]' style={{backgroundImage: "url('/heart.jpg')", backgroundSize: 'cover', backgroundPosition: '80% center'}}/>
       <div className='relative z-49 col-span-2 xl:ml-15 flex flex-col justify-between max-h-full md:h-1/2 lg:h-full items-center py-4 xl:py-15 bg-black/40 lg:bg-transparent text-center lg:text-left mx-4 xl:mx-0'>
         <h1 className="text-lg sm:text-xl xl:text-2xl font-bold px-2 leading-10">Helping People and Communities Where It Matters Most</h1>
