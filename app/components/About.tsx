@@ -45,9 +45,9 @@ function About() {
   return (
     <section
       id="about"
-      className="sm:p-20 pt-20 sm:pt-35 lg:pt-20 lg:gap-10 space-y-8 bg-blue-50 grid grid-cols-1 lg:grid-cols-5 section-anchor text-center lg:text-left place-items-center"
+      className="sm:p-20 pt-20 sm:pt-35 lg:pt-20 lg:gap-10 bg-blue-50 grid grid-cols-1 xl:grid-cols-5 section-anchor text-center xl:text-left place-items-center"
     >
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 col-span-3 md:order-1 order-2">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 col-span-3 xl:order-1 order-2 mt-10 xl:mt-0">
         {programs.map((program) => (
           <div
             key={program.name}
@@ -64,7 +64,7 @@ function About() {
           </div>
         ))}
       </div>
-      <div className="col-span-2 flex flex-col items-center justify-around bg-white/40 rounded-2xl border border-gray-200 h-auto lg:h-[95%] gap-8 lg:gap-0 py-4 lg:py-0 w-full order-1 lg:order-2">
+      <div className="col-span-2 flex flex-col items-center justify-around bg-white/40 rounded-2xl border border-gray-200 h-auto xl:h-[95%] gap-8 xl:gap-0 py-4 xl:py-0 w-full order-1 xl:order-2">
         <h3 className="md:text-4xl text-2xl tracking-widest font-bold w-3/4">
           Our Programs
         </h3>
