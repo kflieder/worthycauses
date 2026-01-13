@@ -45,9 +45,9 @@ function About() {
   return (
     <section
       id="about"
-      className="p-20 gap-10 space-y-8 bg-blue-50 grid grid-cols-5 section-anchor"
+      className="sm:p-20 pt-20 sm:pt-35 lg:pt-20 lg:gap-10 space-y-8 bg-blue-50 grid grid-cols-1 lg:grid-cols-5 section-anchor text-center lg:text-left place-items-center"
     >
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 col-span-3">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 col-span-3 md:order-1 order-2">
         {programs.map((program) => (
           <div
             key={program.name}
@@ -64,8 +64,8 @@ function About() {
           </div>
         ))}
       </div>
-      <div className="col-span-2 flex flex-col items-center justify-around bg-white/40 rounded-2xl border border-gray-200 h-[95%]">
-        <h3 className="text-4xl tracking-widest font-bold w-3/4">
+      <div className="col-span-2 flex flex-col items-center justify-around bg-white/40 rounded-2xl border border-gray-200 h-auto lg:h-[95%] gap-8 lg:gap-0 py-4 lg:py-0 w-full order-1 lg:order-2">
+        <h3 className="md:text-4xl text-2xl tracking-widest font-bold w-3/4">
           Our Programs
         </h3>
         <h2 className="w-3/4 leading-10">
@@ -74,7 +74,7 @@ function About() {
           humanitarian aid, and targeted initiatives that uplift lives and open
           doors to brighter futures.
         </h2>
-        <div className="flex gap-4 w-3/4">
+        <div className="flex gap-4 w-full justify-center lg:w-3/4">
           <button onClick={()=> scrollToSection('contact')} className="border rounded-2xl p-3 cursor-pointer">
             Get in touch
           </button>

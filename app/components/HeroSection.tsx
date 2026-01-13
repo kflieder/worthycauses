@@ -4,10 +4,11 @@ import { scrollToSection } from "../lib/scrollTo";
 function HeroSection() {
     
   return (
-    <div id='hero' className='grid grid-cols-5 h-[70vh] section-anchor'>
-      <div className='col-span-2 ml-15 flex flex-col justify-around items-center py-10'>
+    <div id='hero' className='grid grid-cols-1 place-items-end lg:place-items-center lg:grid-cols-5 h-[75vh] section-anchor text-white lg:text-black'>
+      <div className='inset-0 opacity-45 absolute block lg:hidden z-1' style={{backgroundImage: "url('/heart.jpg')", backgroundSize: 'cover',}}/>
+      <div className='relative z-49 col-span-2 lg:ml-15 flex flex-col justify-around h-full items-center py-10 bg-black/40 lg:bg-transparent text-center lg:text-left mx-6 lg:mx-0'>
         <h1 className="text-2xl font-bold  leading-10">Helping People and Communities Where It Matters Most</h1>
-        <h3 className='text-lg bg-blue-50 rounded-lg p-6'>
+        <h3 className='text-lg lg:bg-blue-50 bg-transparent rounded-lg p-6'>
           Worthy Causes is a nonprofit organization dedicated to creating meaningful change through education, humanitarian aid, and community-focused programs that uplift lives and open doors to opportunity.
         </h3>
         <div className='flex gap-4'>
@@ -15,7 +16,7 @@ function HeroSection() {
         <button onClick={() => scrollToSection('about')} className='border rounded-2xl p-3 cursor-pointer'>Learn More</button>
       </div>
       </div>
-      <div className='h-full relative col-span-3'>
+      <div className='h-full relative col-span-3 lg:block hidden'>
         <img
           src="/heart.jpg"
           alt="people standing in a circle holding a heart"

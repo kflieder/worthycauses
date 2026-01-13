@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="pt-40">
+      <div className="pt-30">
         <HeroSection />
         <About />
         <Impact />
