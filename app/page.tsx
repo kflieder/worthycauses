@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="pt-15 sm:pt-30">
+      <div className="mt-20 sm:mt-30 md:mt-35">
         <HeroSection />
         <About />
         <Impact />
