@@ -6,7 +6,7 @@ function HeroSection() {
   return (
     <div id='hero' className='relative grid grid-cols-1 place-items-center lg:grid-cols-5 section-anchor text-white lg:text-black'>
       <div className='inset-0 opacity-45 absolute block lg:hidden z-1' style={{backgroundImage: "url('/heart.jpg')", backgroundSize: 'cover', backgroundPosition: '80% center'}}/>
-      <div className='relative z-49 col-span-2 xl:ml-15 flex flex-col gap-6 justify-between h-auto xl:h-full items-center py-4 xl:py-15 bg-black/40 lg:bg-transparent text-center lg:text-left mx-4 xl:mx-0 my-5 sm:my-10 lg:my-0'>
+      <div className='relative z-49 col-span-2 xl:ml-15 flex flex-col gap-6 justify-between h-auto xl:h-full items-center py-4 xl:py-15 bg-black/40 lg:bg-transparent text-center lg:text-left mx-4 xl:mx-0 my-20 sm:my-30 lg:my-0'>
         <h1 className="text-lg sm:text-xl xl:text-2xl font-bold px-2 leading-10">Helping People and Communities Where It Matters Most</h1>
         <h3 className='text-base sm:text-lg lg:bg-blue-50 bg-transparent rounded-lg p-6'>
           Worthy Causes is a nonprofit organization dedicated to creating meaningful change through education, humanitarian aid, and community-focused programs that uplift lives and open doors to opportunity.
