@@ -4,21 +4,7 @@ import { scrollToSection } from '../lib/scrollTo';
 
 function Contact() {
   
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert(`Message sent! \nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`);
-    setFormData({ name: "", email: "", message: "" });
-  };
 
   const boardMembers = ["Vera Kiser", "Timothy Kiser",];
 
@@ -33,13 +19,11 @@ function Contact() {
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="bg-white p-6 rounded-2xl shadow">
+          <form action="https://usebasin.com/f/466a633a5086" method="POST" className="bg-white p-6 rounded-2xl shadow">
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
             <input
               type="text"
               name="name"
-              value={formData.name}
-              onChange={handleChange}
               placeholder="Your Name"
               className="w-full mb-4 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               required
@@ -47,16 +31,12 @@ function Contact() {
             <input
               type="email"
               name="email"
-              value={formData.email}
-              onChange={handleChange}
               placeholder="Your Email"
               className="w-full mb-4 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               required
             />
             <textarea
               name="message"
-              value={formData.message}
-              onChange={handleChange}
               placeholder="Your Message"
               className="w-full mb-4 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               rows={4}
