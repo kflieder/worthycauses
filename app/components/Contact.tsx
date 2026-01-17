@@ -50,7 +50,7 @@ function Contact() {
           {/* Trust & Transparency */}
           <div className="bg-white p-6 rounded-2xl shadow flex flex-col justify-around items-center gap-2">
             <h3 className="text-xl xl:text-2xl font-semibold">Trust & Transparency</h3>
-            <div className='w-2/3 border-b border-gray-300' />
+            <div className='w-2/3 border-b border-gray-300 hidden sm:block' />
             <p className="mb-4 text-gray-700 border border-gray-300 p-8 rounded-2xl">
               Worthy Causes is a registered 501(c)(3) nonprofit organization. We are committed
               to full transparency in how donations are used and regularly publish reports
