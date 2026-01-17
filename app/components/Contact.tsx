@@ -11,7 +11,7 @@ function Contact() {
   return (
     <section id="contact" className="py-16 bg-gray-50 section-anchor">
       <div className="max-w-6xl mx-auto px-4 text-center flex flex-col gap-10">
-        <h2 className="text-3xl font-bold">Get Involved</h2>
+        
        
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -53,8 +53,7 @@ function Contact() {
             <div className='w-2/3 border-b border-gray-300 hidden sm:block' />
             <p className="mb-4 text-gray-700 border border-gray-300 p-8 rounded-2xl">
               Worthy Causes is a registered 501(c)(3) nonprofit organization. We are committed
-              to full transparency in how donations are used and regularly publish reports
-              and updates on our programs and impact.
+              to full transparency in how donations are used. 
             </p>
             <div className='w-2/3 border-b border-gray-300' />
             {/* <div className=' border rounded-4xl w-full py-2'>
