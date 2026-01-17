@@ -113,7 +113,7 @@ function Header() {
       {menuOpen && (
         <div
           ref={menuRef}
-          className="sm:hidden absolute top-20 left-0 right-0 bg-black z-50 text-lg font-light flex flex-col items-center gap-4 py-4"
+          className="sm:hidden absolute top-20 left-0 right-0 bg-black z-50 text-lg font-light flex justify-center items-center gap-4 py-4 pb-6"
         >
           {navButtons.map((button) => (
             <div
