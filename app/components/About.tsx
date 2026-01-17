@@ -85,9 +85,9 @@ function About() {
           </button> */}
         </div>
       </div>
-      <div className='w-full xl:col-span-5 col-span-1'>
+      <div className='w-full xl:col-span-5 col-span-1 '>
         <h3 className='font-semibold my-4'>Do you or your organization have a need?</h3>
-        <p className='leading-8 text-gray-700'>If you have a need that falls into one of our giving categories above, simply use our contact form below to tell us who you are and how we can be of assistance.  We answer all inquiries.  Trust is our priority — we are a registered 501(c)(3) nonprofit committed to transparency and your privacy.</p>
+        <p className='leading-8 text-gray-700 px-6 sm:px-0'>If you have a need that falls into one of our giving categories above, simply use our contact form below to tell us who you are and how we can be of assistance.  We answer all inquiries.  Trust is our priority — we are a registered 501(c)(3) nonprofit committed to transparency and your privacy.</p>
       </div>
     </section>
   );
