@@ -10,12 +10,9 @@ function Contact() {
 
   return (
     <section id="contact" className="py-16 bg-gray-50 section-anchor">
-      <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-4">Get Involved & Trust Us</h2>
-        <p className="mb-12 text-gray-700">
-          Whether you want to reach out, volunteer, or support our mission, we’re here to connect.
-          Your trust is our priority — we are a registered 501(c)(3) nonprofit committed to transparency.
-        </p>
+      <div className="max-w-6xl mx-auto px-4 text-center flex flex-col gap-10">
+        <h2 className="text-3xl font-bold">Get Involved & Trust Us</h2>
+       
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Form */}
@@ -51,28 +48,30 @@ function Contact() {
           </form>
 
           {/* Trust & Transparency */}
-          <div className="bg-white p-6 rounded-2xl shadow flex flex-col justify-around">
-            <h3 className="text-xl font-semibold mb-4">Trust & Transparency</h3>
+          <div className="bg-white p-6 rounded-2xl shadow flex flex-col justify-around items-center gap-6">
+            <h3 className="text-xl font-semibold">Trust & Transparency</h3>
+            <div className='w-2/3 border-b border-gray-300' />
             <p className="mb-4 text-gray-700">
               Worthy Causes is a registered 501(c)(3) nonprofit organization. We are committed
               to full transparency in how donations are used and regularly publish reports
               and updates on our programs and impact.
             </p>
-            <div className='border rounded-2xl border-gray-400 py-2'>
-            <h4 className="font-semibold mb-2">Board Members</h4>
+            <div className='w-2/3 border-b border-gray-300' />
+            <div className=' border rounded-4xl w-full py-2'>
+            <h4 className="font-semibold mb-2 w-full">Board Members</h4>
             <ul className="text-gray-700">
               {boardMembers.map((member) => (
                 <li key={member}>{member}</li>
               ))}
             </ul>
             </div>
-            <button
+            {/* <button
               type="button"
               onClick={() => scrollToSection('donate')}
               className="w-full mt-4 py-3 bg-green-600 text-white rounded-xl font-semibold hover:bg-green-700 transition cursor-pointer"
             >
               Donate Now
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

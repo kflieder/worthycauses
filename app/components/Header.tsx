@@ -7,9 +7,9 @@ function Header() {
     const [activeSection, setActiveSection] = useState<string | null>(null);
     const navButtons = [
       { label: "About", id: "about" },
-      { label: "Our Impact", id: "impact" },
+      // { label: "Our Impact", id: "impact" },
       { label: "Get Involved", id: "contact" },
-      { label: "Donate", id: "donate" }
+      // { label: "Donate", id: "donate" }
     ];
     const [menuOpen, setMenuOpen] = useState(false);
     const menuRef = useRef<HTMLDivElement>(null);
@@ -78,14 +78,14 @@ function Header() {
     }
 
   return (
-    <div className='py-1 bg-black text-white grid md:grid-cols-1 lg:grid-cols-3 items-center fixed w-full top-0 z-50'>
+    <div className='py-1 bg-black text-white grid grid-cols-1 sm:grid-cols-3 items-center fixed w-full top-0 z-50'>
         <div ref={hamburgerRef} onClick={handleMenuToggle} className="sm:hidden flex absolute top-2 right-2">
         <CiMenuBurger className="text-4xl ml-auto sm:hidden cursor-pointer"/>
         </div>
       <div onClick={() => scrollToSection('hero')} className='col-span-1 flex justify-center items-center bg-black shrink-0 mr-4 sm:mr-0 cursor-pointer'>
-        <img src="/logo2.png" alt="Logo" className='sm:h-24 h-18 shrink-0' />
+        <img src="/logo2.png" alt="Logo" className='sm:h-22 h-18 shrink-0' />
       </div>
-      <div className='w-full col-span-1 sm:col-span-2 justify-around items-center text-2xl font-light hidden sm:flex'>
+      <div className='w-full col-span-1 sm:col-span-2 justify-end gap-10 px-10 items-center text-2xl font-light hidden sm:flex'>
           {navButtons.map((button) => (
             <div key={button.id} onClick={() => scrollToSection(button.id)} className={`${button.id === activeSection ? `${button.id === 'donate' ? donateBtnAvtiveStyle : btnActiveStyle}`: `${button.id === 'donate' ? donateBtnStyle : btnStyle}`}`}>{button.label}</div>
           ))}

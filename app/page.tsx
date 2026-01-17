@@ -14,9 +14,9 @@ export default function Home() {
       <div className="mt-20 sm:mt-30 md:mt-35">
         <HeroSection />
         <About />
-        <Impact />
+        {/* <Impact /> */}
         <Contact />
-        <Donate />
+        {/* <Donate /> */}
         <Footer />
       </div>
     </div>
