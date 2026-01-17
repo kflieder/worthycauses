@@ -6,6 +6,7 @@ import { scrollToSection } from "../lib/scrollTo";
 function Header() {
     const [activeSection, setActiveSection] = useState<string | null>(null);
     const navButtons = [
+      { label: "Home", id: "hero" },
       { label: "About", id: "about" },
       // { label: "Our Impact", id: "impact" },
       { label: "Get Involved", id: "contact" },
@@ -33,12 +34,15 @@ function Header() {
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
+            // if (entry.isIntersecting) {
+            //   if (entry.target.id === 'hero') {
+            //     setActiveSection(null);
+            //   } else {
+            //     setActiveSection(entry.target.id);
+            //   }
+            // }
             if (entry.isIntersecting) {
-              if (entry.target.id === 'hero') {
-                setActiveSection(null);
-              } else {
-                setActiveSection(entry.target.id);
-              }
+              setActiveSection(entry.target.id);
             }
           })
         },
