@@ -11,7 +11,7 @@ function Contact() {
   return (
     <section id="contact" className="py-16 bg-gray-50 section-anchor">
       <div className="max-w-6xl mx-auto px-4 text-center flex flex-col gap-10">
-        <h2 className="text-3xl font-bold">Get Involved & Trust Us</h2>
+        <h2 className="text-3xl font-bold">Get Involved</h2>
        
 
         <div className="grid md:grid-cols-2 gap-12">
