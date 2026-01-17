@@ -48,23 +48,23 @@ function Contact() {
           </form>
 
           {/* Trust & Transparency */}
-          <div className="bg-white p-6 rounded-2xl shadow flex flex-col justify-around items-center gap-6">
-            <h3 className="text-xl font-semibold">Trust & Transparency</h3>
+          <div className="bg-white p-6 rounded-2xl shadow flex flex-col justify-around items-center gap-2">
+            <h3 className="text-xl xl:text-2xl font-semibold">Trust & Transparency</h3>
             <div className='w-2/3 border-b border-gray-300' />
-            <p className="mb-4 text-gray-700">
+            <p className="mb-4 text-gray-700 border border-gray-300 p-8 rounded-2xl">
               Worthy Causes is a registered 501(c)(3) nonprofit organization. We are committed
               to full transparency in how donations are used and regularly publish reports
               and updates on our programs and impact.
             </p>
             <div className='w-2/3 border-b border-gray-300' />
-            <div className=' border rounded-4xl w-full py-2'>
+            {/* <div className=' border rounded-4xl w-full py-2'>
             <h4 className="font-semibold mb-2 w-full">Board Members</h4>
             <ul className="text-gray-700">
               {boardMembers.map((member) => (
                 <li key={member}>{member}</li>
               ))}
             </ul>
-            </div>
+            </div> */}
             {/* <button
               type="button"
               onClick={() => scrollToSection('donate')}
