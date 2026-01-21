@@ -45,7 +45,7 @@ function About() {
   return (
     <section
       id="about"
-      className="sm:p-20 pb-10 pt-6 sm:pt-35 lg:pt-10 gap-10 lg:gap-10 bg-blue-50 grid grid-cols-1 xl:grid-cols-5 section-anchor text-center xl:text-left place-items-center"
+      className="sm:p-20 pb-10 pt-6  lg:pt-10 gap-10 lg:gap-10 bg-blue-50 grid grid-cols-1 xl:grid-cols-5 section-anchor text-center xl:text-left place-items-center"
     >
       <div className='my-10 xl:my-4 flex flex-col col-span-1 xl:col-span-5 gap-2 p-4 px-10 xl:px-0'>
       <h1 className='text-5xl font-bold tracking-widest'>How do we do it?</h1>
