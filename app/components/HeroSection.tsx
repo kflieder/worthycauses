@@ -10,7 +10,7 @@ function HeroSection() {
         <h1 className="text-xl xl:text-2xl font-bold px-4 leading-10">Helping individuals and communities</h1>
         <div className="w-2/3 border-b border-white/80 block sm:hidden" />
         <h3 className='text-base sm:text-lg lg:bg-blue-50 bg-transparent rounded-lg p-6'>
-          At Worthy Causes, we believe ambitious people deserve opportunities, safety, and support. Our programs focus on decreasing the financial burden of education and student development, humanitarian aid to those who shelter animals at their own expense, support to victims of human trafficking, providing aid to communities in need abroad. 
+          At Worthy Causes, we believe ambitious people deserve opportunities, safety, and support. Our programs focus on decreasing the financial burden of education and student development, support to aspiring pilots, aid to those who shelter animals, support to victims of human trafficking, and aid to communities in need.
         </h3>
         <div className='flex gap-4'>
         {/* <button onClick={() => scrollToSection('donate')} className='border rounded-2xl p-3 cursor-pointer bg-black text-white hover:bg-gray-700 transition'>Donate Now</button> */}
